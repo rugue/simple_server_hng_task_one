@@ -4,7 +4,9 @@
   "description": "Task 1 for HNG11 for Backend Devs",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --respawn --env-file=.env --no-debug src/index.ts",
+    "dev": "ts-node-dev --respawn --env-file=.env --no-debug src/index.ts",
+    "prestart": "tsc",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Osarugue Enehizena",
